@@ -4,10 +4,15 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "install-release:android": "npx react-native run-android --variant=release",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "code-push-production:ios": "appcenter codepush release-react -a auliakbarh/Shopping-List -d Production",
+    "code-push-staging:ios": "appcenter codepush release-react -a auliakbarh/Shopping-List -d Staging",
+    "code-push-production:android": "appcenter codepush release-react -a auliakbarh/Shopping-List-1 -d Production",
+    "code-push-staging:android": "appcenter codepush release-react -a auliakbarh/Shopping-List-1 -d Staging"
   },
   "dependencies": {
     "appcenter": "4.3.0",
@@ -15,6 +20,7 @@
     "appcenter-crashes": "4.3.0",
     "react": "17.0.2",
     "react-native": "0.66.4",
+    "react-native-code-push": "^7.0.4",
     "react-native-config": "^1.4.5",
     "tailwind-react-native-classnames": "^1.5.1"
   },
