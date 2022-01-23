@@ -1,5 +1,5 @@
 /**
- * Sample React Native App
+ * Sample React Native Index
  * https://github.com/facebook/react-native
  *
  * @format
@@ -9,7 +9,7 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
 
-const App = () => {
+const Index = () => {
   return (
     <SafeAreaView>
       <Text>Hello World</Text>
@@ -17,4 +17,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Index;
