@@ -65,3 +65,6 @@ ios/tmp.xcconfig
 .env
 .env.staging
 .env.production
+
+##
+android/app/src/main/assets/appcenter-config.json
