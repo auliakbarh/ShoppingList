@@ -9,10 +9,12 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
 
+import Config from '@/config';
+
 const Index = () => {
   return (
     <SafeAreaView>
-      <Text>Hello World</Text>
+      <Text>{`Environment: ${Config.env.environment}`}</Text>
     </SafeAreaView>
   );
 };
